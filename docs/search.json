@@ -7,6 +7,20 @@
     "text": "About this blog"
   },
   {
+    "objectID": "posts/optimal-design/index.html",
+    "href": "posts/optimal-design/index.html",
+    "title": "Supercharge Your Experiments with Optimal Design",
+    "section": "",
+    "text": "Designing experiments is as much of an art as it is a science, and in order to get the best insights from our data, statisticians and data scientists need to find creative ways to maximize the significance of their results. Optimal design theory gives us ways to design experiments that minimize the error in our experiment. I’ll talk a bit about where optimal design can be used, and show a simple example using simple linear regression."
+  },
+  {
+    "objectID": "posts/optimal-design/index.html#informed-experiment-designs",
+    "href": "posts/optimal-design/index.html#informed-experiment-designs",
+    "title": "Supercharge Your Experiments with Optimal Design",
+    "section": "Informed Experiment Designs",
+    "text": "Informed Experiment Designs\nWe need to pick concentration levels that minimize parameter errors, and this is where optimal design comes in. We need to ‘squish’ the error of our parameters \\(\\beta_0\\) and \\(\\beta_1\\) into one single, summarizing value. To do this, we will use the D-Optimality Criterion, which, for our model, has the equation:\n\\[\n\\texttt{D-Optimality} = \\frac{\\sigma^4}{SS_{(\\text{fertilizer growth})}}\n\\]\nFor the math-savvy readers, this is the determinant of the covariance matrix of \\(\\beta_0\\) and \\(\\beta_1\\).\nWe want to minimize the D-Optimality criterion to get the lowest error in our parameters, so the bottom term, \\(SS_{(\\text{fertilizer growth})}\\), needs to be as large as possible. This is the sum of squared deviations in our 50 fertilizer growth levels:\n\\[\nSS_{(\\text{fertilizer growth})} = \\sum_{i=1}^{50} (\\text{fertilizer growth}_i- \\text{mean fertilizer growth})^2.\n\\]\nSo, to optimize our experiment, we should pick soil concentrations that are as far away as possible from their mean value. This means we should have 25 plants with no soil concentration, and 25 points at the maximum possible concentration. Let’s set up some code to test this result. I’ll pretend the true model has parameters \\((\\beta_0,\\beta_1) = (1,2)\\) and standard deviation \\(\\sigma = 0.25\\) for demonstration purposes.\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# set up some simulation code\nB0 = 1\nB1 = 2\nvariance = 0.25\nN = 50\nnp.random.seed(123)\n\n# define some functions to calculate D-optimality\nSSx = lambda x: np.sum((x - np.mean(x))**2)           \nD_opt = lambda x: np.log(variance**2/SSx(x))\n\n# simulate some response data\ny_true = lambda x: B1 * x + B0\ny_error = lambda x: y_true(x) + np.random.normal(scale=np.sqrt(variance),size=N)\n\nNow, we’ll try out some experiment designs. One of them will be the evenly spaced measurements, the other will be our new optimal design. Don’t worry about the actual values, because we usually scale the design space to [-1,1] to make it easier for optimization.\n\n# make the evenly spaced design\nX_bad_design = np.linspace(-1,1,N)     \n\n# and the optimal dessign\nX_good_design = np.hstack(\n    (-1*np.ones(N//2),1*np.ones(N//2))\n)  \n    \n# plot reression line, and hypothetical data for each experiment\nplt.plot(\n    X_bad_design,\n    y_true(X_bad_design),\n    c='grey',zorder = 1)    \n\nplt.scatter(\n    X_bad_design,\n    y_error(X_bad_design),                         \n    color='red', zorder = 2,\n    label=f'Design 1: D-opt = {round(D_opt(X_bad_design),3)}'\n)  \n\nplt.scatter(\n    X_good_design,y_error(X_good_design),\n    color='green', zorder = 3,\n    label=f'Design 2: D-opt = {round(D_opt(X_good_design),3)}'\n)\nplt.xlabel('X');plt.ylabel('y')\nplt.legend()\n\n\n\n\n\n\n\n\nThe optimal design has a lower D-optimality, leading to overall lower error in our parameters! This was only a simple model, but we can extend optimal design to ANOVA, generalized linear models, etc.\n\nOptimal… But Good?\nThis design might reduce the error in our model, but is it actually a good design? We’re not really exploring the whole possibility of concentration levels in our experiment. Nevertheless, we now know where our model is most sensitive to error, and we can keep this in mind when designing our experiment. This was just a small purview into the ways optimal design theory can be used to sharpen your statistical insights!"
+  },
+  {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Welcome To My Blog",
@@ -14,17 +28,10 @@
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts.\nBen was here"
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Blog",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJan 18, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJan 15, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Supercharge Your Experiments with Optimal Design\n\n\n\n\n\n\nstatistics\n\n\ncode\n\n\ntutorial\n\n\n\n\n\n\n\n\n\nJan 18, 2025\n\n\nBenjamin Frizzell\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJan 15, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   }
 ]
