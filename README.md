@@ -8,7 +8,6 @@ I'm a student in the UBC Master of Data Science, with a strong interest in machi
 
 - 🔭 I’m currently working on: A deep learning project to classify bird species by their call
 - 🌱 I’m currently learning: Bayesian modelling, dashboard visualization
-- 📫 How to reach me: [Email](mailto:benjamin.frizzell01@gmail.com)
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: I'm a member of the UBC Heavy Metal Club! 🤘 🎸
 
