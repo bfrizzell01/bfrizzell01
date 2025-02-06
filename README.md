@@ -1,6 +1,6 @@
 ## Hi, I'm Ben 🤘
 
-![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin)]([https://www.linkedin.com/in/YOUR_USERNAME/](https://www.linkedin.com/in/benjamin-frizzell-843436309/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/benjamin-frizzell-843436309/)
 [![X](https://img.shields.io/badge/X-Profile-black?style=flat&logo=twitter)](https://x.com/b_frizzell)
 [![Gmail](https://img.shields.io/badge/Gmail-Email-red?style=flat&logo=gmail)](mailto:benjamin.frizzell01@gmail.com)
 
