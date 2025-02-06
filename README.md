@@ -11,6 +11,6 @@ I'm a student in the UBC Master of Data Science, with a strong interest in machi
 - 🔭 I’m currently working on: A deep learning project to classify bird species by their call
 - 🌱 I’m currently learning: Bayesian modelling, dashboard visualization
 - 😄 Pronouns: He/Him
-- ⚡ Fun fact: I'm a member of the UBC Heavy Metal Club! 🤘 🎸
+- ⚡ Fun fact: I'm a member of the UBC Heavy Metal Club! Ask me about my favourite bands 🤘 🎸 
 
-[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=bfrizzell01&theme=dark&background=000000)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com/?user=bfrizzell01)](https://git.io/streak-stats)
