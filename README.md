@@ -6,7 +6,7 @@
 
 ### About Me
 
-I'm a student in the UBC Master of Data Science, with a strong interest in machine learning engineering. My passion is to use cutting-edge AI and statistical modelling to tackle the most critical problems in our world, such as climate change, poverty, and mental health.
+I'm a student in the UBC Master of Data Science, with a strong interest in machine learning engineering. My passion is to use cutting-edge AI and statistical modelling to tackle the most critical problems in our world, like climate change, poverty, and mental health.
 
 - 🔭 I’m currently working on: A deep learning project to classify bird species by their call
 - 🌱 I’m currently learning: Bayesian modelling, dashboard visualization
