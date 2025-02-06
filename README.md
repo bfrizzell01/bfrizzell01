@@ -1,8 +1,7 @@
 ## Hi, I'm Ben 🤘
 
-[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/YOUR_USERNAME/)
-[![X](https://img.shields.io/badge/X-Profile-black?style=flat&logo=twitter)](https://x.com/b_frizzell)
-[![Gmail](https://img.shields.io/badge/Gmail-Email-red?style=flat&logo=gmail)](mailto:benjamin.frizzell01@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/YOUR_USERNAME/](https://www.linkedin.com/in/benjamin-frizzell-843436309/)
+
 
 <!--
 **bfrizzell01/bfrizzell01** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
