@@ -13,4 +13,4 @@ I'm a student in the UBC Master of Data Science, with a strong interest in machi
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: I'm a member of the UBC Heavy Metal Club! 🤘 🎸
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=bfrizzell01)](https://github.com/anuraghazra/github-readme-stats)
+[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=bfrizzell01&theme=dark&background=000000)](https://git.io/streak-stats)
