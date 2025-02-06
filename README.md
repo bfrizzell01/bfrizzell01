@@ -13,4 +13,4 @@ I'm a student in the UBC Master of Data Science, with a strong interest in machi
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: I'm a member of the UBC Heavy Metal Club! Ask me about my favourite bands 🤘 🎸 
 
-[![GitHub Streak](https://streak-stats.demolab.com/?user=bfrizzell01)](https://git.io/streak-stats)
+<a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=bfrizzell01" alt="GitHub Streak" /></a>
