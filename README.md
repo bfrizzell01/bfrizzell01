@@ -8,7 +8,7 @@
 
 I'm a student in the UBC Master of Data Science, with a strong interest in machine learning engineering. My passion is to use cutting-edge AI and statistical modelling to tackle the most critical problems in our world, like climate change, poverty, and mental health.
 
-- 🔭 I’m currently working on: A deep learning project to classify bird species by their call, a dashboard to help identify rental issues in Vancouver
+- 🔭 I’m currently working on: A [deep learning project](https://github.com/bfrizzell01/metal-scream-classifier) to classify different kinds of heavy metal screams, a dashboard to help identify rental issues in Vancouver
 - 🌱 I’m currently learning: Bayesian modelling, building dashboards in Python, Pytorch
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: I'm a member of the UBC Heavy Metal Club! Ask me about my favourite bands 🤘 🎸 
