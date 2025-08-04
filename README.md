@@ -6,9 +6,25 @@
 
 ### About Me
 
-I'm a recent graduate from the UBC Master of Data Science program. My passion is to use cutting-edge AI and statistical modelling to tackle the most critical problems in our world, like climate change, poverty, and mental health. I recently worked with the Canada Forest Service to develop deep learning models to assist in [monitoring the health of afforestation sites in Ontario.](https://github.com/ptompalski/MDSAfforestationMonitoring)
+I'm a recent graduate of the UBC Master of Data Science program with a deep interest in using AI and statistical modeling to make a real-world impact.
 
-- 🔭 I’m currently working on: A [deep learning project](https://github.com/bfrizzell01/metal-scream-classifier) to classify different kinds of heavy metal screams, a web app for competetive Pokemon metagame analytics (coming soon!).
-- 🌱 I’m currently learning: Music information retrieval methods for deep learning, Fundamentals of object-oriented programming (OOP), API parsing and ingestion with Flask, front-end web app development in Dash
-- 😄 Pronouns: He/Him
-- ⚡ Fun fact: I love heavy metal music! Ask me about my favourite bands 🤘 🎸 
+I believe machine learning and deep learning are powerful tools that can help solve some of the most pressing challenges of our time - including **climate change**, **poverty**, and **mental health**. As part of a collaborative project with the **Canada Forest Service**, I developed deep learning models to assist in [monitoring the health of afforestation sites in Ontario](https://github.com/ptompalski/MDSAfforestationMonitoring) — an effort aimed at improving reforestation outcomes and ecological resilience.
+
+But it's not all serious work! I also love building **fun, creative side projects** that reflect my personal interests - from music to games and everything in between.
+
+---
+
+- 🔭 **Currently building**:
+  - [A deep learning model](https://github.com/bfrizzell01/metal-scream-classifier) to classify different kinds of heavy metal screams
+  - A Flask/Dash web app for competitive Pokémon metagame analytics (coming soon!)
+
+- 🌱 **Currently learning**:
+  - Music information retrieval (MIR) techniques for deep learning
+  - Fundamentals of object-oriented programming (OOP)
+  - API parsing and ingestion with Flask
+  - Front-end development with Dash
+
+- 😄 **Pronouns**: He/Him  
+- ⚡ **Fun fact**: I’m a huge heavy metal fan 🤘 Ask me about my favorite bands!
+
+---
