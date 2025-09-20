@@ -8,9 +8,9 @@
 
 I'm a recent graduate of the UBC Master of Data Science program with a deep interest in using AI and statistical modeling to make a real-world impact.
 
-I believe machine learning and deep learning are powerful tools that can help solve some of the most pressing challenges of our time - including **climate change**, **poverty**, and **mental health**. As part of a collaborative project with the **Canada Forest Service**, I developed deep learning models to assist in [monitoring the health of afforestation sites in Ontario](https://github.com/ptompalski/MDSAfforestationMonitoring) — an effort aimed at improving reforestation outcomes and ecological resilience.
+I believe machine learning and deep learning are powerful tools that can help solve some of the most pressing challenges of our time. As part of a collaborative project with the **Canada Forest Service**, I developed deep learning models to assist in [monitoring the health of afforestation sites in Ontario](https://github.com/ptompalski/MDSAfforestationMonitoring) — an effort aimed at improving reforestation outcomes and ecological resilience.
 
-But it's not all serious work! I also love building **fun, creative side projects** that reflect my personal interests - from music to games and everything in between.
+But it's not all serious work! I also love building **fun, creative side projects** that reflect my personal interests and my desire to learn about new skills, models, and approaches.
 
 ---
 
