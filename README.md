@@ -16,12 +16,11 @@ But it's not all serious work! I also love building **fun, creative side project
 
 - 🔭 **Currently building**:
   - My own music reccomender system using Spotify and a suite of RL algorithms
-  - A Flask/Dash web app for competitive Pokémon metagame analytics (coming soon!)
 
 - 🌱 **Currently learning**:
   - Fundamentals of object-oriented programming (OOP)
   - API parsing and ingestion with Flask
-  - Front-end development with Dash
+  - Front-end dashboarding with Dash
   - MLOps with [DataTalks](https://github.com/DataTalksClub/mlops-zoomcamp)
 
 - 😄 **Pronouns**: He/Him  
