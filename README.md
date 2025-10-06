@@ -20,7 +20,7 @@ But it's not all serious work! I also love building **fun, creative side project
 - 🌱 **Currently learning**:
   - Fundamentals of object-oriented programming (OOP)
   - API parsing and ingestion with Flask
-  - Front-end dashboarding with Dash
+  - Dashboarding with Dash and PowerBI
   - MLOps with [DataTalks](https://github.com/DataTalksClub/mlops-zoomcamp)
 
 - 😄 **Pronouns**: He/Him  
