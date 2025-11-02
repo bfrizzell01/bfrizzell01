@@ -10,8 +10,9 @@ website:
       - about.qmd
       - icon: github
         href: https://github.com/bfrizzell01/
-      - icon: twitter
-        href: https://twitter.com
+      - icon: linkedin
+        href: https://www.linkedin.com/in/benjamin-frizzell-843436309/
+     
 format:
   html:
     theme: cosmo

@@ -7,6 +7,7 @@ image: "header.jpg"
 bibliography: references.bib
 nocite: |
     @doi:https://doi.org/10.1002/9780470746912.ch2
+jupyter: conda-base-py
 ---
 
 Designing experiments is as much of an art as it is a science, and in order to get the best insights from our data, 

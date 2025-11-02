@@ -10,7 +10,9 @@ about:
     - icon: github
       text: Github
       href: https://github.com/bfrizzell01
-
+format:
+  html:
+    css: styles.css
 ---
 
 I’m a recent Master’s graduate in Data Science with a background spanning statistics and machine learning research, math tutoring, and music instruction. That mix of analytical and creative experience shapes how I work — blending rigorous, data-driven thinking with curiosity and experimentation.
