@@ -202,7 +202,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> bs4 <span class="im">import</span> BeautifulSoup</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pickle</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>We’ll start by sending a GET request to the blog page using the <code>requests</code> package. We’ll pass the</p>
+<p>We’ll start by sending a GET request to the blog page using the <a href="https://docs.python-requests.org/en/latest/index.html"><code>requests</code></a> package. This will give us the page as a string of raw HTML.</p>
 <div id="8d1b6c4a" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># URL of the blog page</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span> <span class="st">"https://www.spudart.org/blog/six-thousand-spotify-genres/"</span></span>
@@ -278,7 +278,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ['Zither', 'Zohioliin Duu', 'Zolo', 'Zomi Pop', 'Zouglou', 'Zouk', 'Zouk Riddim', 'Zurich Indie', 'Zxc', 'Zydeco']</code></pre>
 </div>
 </div>
-<p>This looks pretty good! But just as a quick sanity check, we’ll make sure all of these genres are indeed actually recognized by Spotify. But before we can do that, we need to get an access token from Spotify, since it uses OAuth 2.0 authorization. I won’t focus on the details of how this authorization works, but you can read more about it <a href="https://developer.spotify.com/documentation/web-api/tutorials/client-credentials-flow">here</a>.</p>
+<p>This looks pretty good! But just as a quick sanity check, we’ll make sure all of these genres are indeed actually recognized by Spotify. We’ll do this by querying the API for songs from each genre to see if we get anything. But before we can do that, we need to get an access token from Spotify, since it uses OAuth 2.0 authorization. I won’t focus on the details of how this authorization works, but you can read more about it <a href="https://developer.spotify.com/documentation/web-api/tutorials/client-credentials-flow">here</a>.</p>
 <div id="af7ac28a" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_spotify_access_token(CLIENT_ID: <span class="bu">str</span>, CLIENT_SECRET: <span class="bu">str</span>):</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''</span></span>
@@ -318,7 +318,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Now we can cycle through the list of genres and filter out the unrecognized ones. For each genre in the list, we will:</p>
 <ol type="1">
 <li>Send a GET request to Spotify for at least one track tagged under the genre.</li>
-<li>Check if any tracks are returned.</li>
+<li>Check if any tracks are returned. If not, we won’t include the genre in our final list.</li>
 </ol>
 <div id="c45a27ee" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> is_valid_genre(genre):</span>
@@ -348,7 +348,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>5995</code></pre>
 </div>
 </div>
-<p>It’s a good thing we checked the list: there were about 120 genres in the original list that didn’t return any tracks, so we’ll throw those out.</p>
+<p>It’s a good thing we checked the list: there were about 120 genres in the original list that didn’t return any tracks, so we threw those out.</p>
 <p>We’re done! Now, we can pickle the genre list to use later.</p>
 <div id="1d830242" class="cell" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># store genres list</span></span>
@@ -358,7 +358,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
 <p>In this notebook, I scraped a complete list of valid Spotify genres from an online source using <code>requests</code> and <code>BeautifulSoup</code>.<br>
-Because Spotify doesn’t publish its genre catalog directly through the Web API, having an up-to-date list is essential for building tools that rely on valid genre inputs - such as the personalized reccomender I’m working on.</p>
+Because Spotify doesn’t publish its genre catalog directly through the Web API, having an up-to-date list is essential for building tools that rely on valid genre inputs - such as the personalized recommender I’m working on.</p>
 <p>By automating the extraction instead of copying manually, we ensure the data is accurate, reproducible, and easy to refresh if the source ever changes. This approach demonstrates how simple web scraping can be a powerful tool for supplementing gaps in public APIs.</p>
 
 
