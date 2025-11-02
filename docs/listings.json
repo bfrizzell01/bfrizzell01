@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/spotify_genre_web_scrape/scrape_genres.html",
       "/posts/optimal-design/index.html"
     ]
   }

@@ -17,5 +17,5 @@ format:
 
 I’m a recent Master’s graduate in Data Science with a background spanning statistics and machine learning research, math tutoring, and music instruction. That mix of analytical and creative experience shapes how I work — blending rigorous, data-driven thinking with curiosity and experimentation.
 
-I'm currently continuing to build my skills, filling in my gaps in my data science knowledge through self-education and personal projects like my [music recoommender system](https://github.com/bfrizzell01/RiffRec). I'll be exploring topics like model deployment, API querying and hosting, visualization, dashboarding, front-end development, and web scraping. Stay tuned for more!
+I'm currently continuing to build my skills, filling in my gaps in my data science knowledge through self-education and personal projects like my [music recommender system](https://github.com/bfrizzell01/RiffRec). I'll be exploring topics like model deployment, API querying and hosting, visualization, dashboarding, front-end development, and web scraping. Stay tuned for more!
 
