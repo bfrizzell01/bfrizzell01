@@ -18,10 +18,9 @@ But it's not all serious work! I also love building **fun, creative side project
   - My own music reccomender system using Spotify and a suite of RL algorithms
 
 - 🌱 **Currently learning**:
-  - Fundamentals of object-oriented programming (OOP)
-  - API parsing and ingestion with Flask
-  - Dashboarding with Dash and PowerBI
+  - Dashboarding in Tableau
   - MLOps with [DataTalks](https://github.com/DataTalksClub/mlops-zoomcamp)
+  - Causal Inference
 
 - 😄 **Pronouns**: He/Him  
 - ⚡ **Fun fact**: I’m a huge heavy metal fan 🤘 Ask me about my favorite bands!
