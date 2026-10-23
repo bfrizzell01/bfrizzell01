@@ -14,12 +14,10 @@ But it's not all serious work! I also love building **fun, creative side project
 
 ---
 
-- 🔭 **Currently building**:
-  - My own music reccomender system using Spotify and a suite of RL algorithms
 
 - 🌱 **Currently learning**:
   - Dashboarding in Tableau
-  - MLOps with [DataTalks](https://github.com/DataTalksClub/mlops-zoomcamp)
+  - FP&A for Business Intelligence
   - Causal Inference
 
 - 😄 **Pronouns**: He/Him  
